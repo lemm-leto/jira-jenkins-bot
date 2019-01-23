@@ -14,4 +14,6 @@ public class Chat {
   private String teamName;
   @OneToOne(targetEntity = Team.class, mappedBy = "chat", cascade = CascadeType.ALL)
   private Team team;
+  @OneToOne(targetEntity = Configuration.class, mappedBy = "chat", cascade = CascadeType.ALL)
+  private Configuration configuration;
 }

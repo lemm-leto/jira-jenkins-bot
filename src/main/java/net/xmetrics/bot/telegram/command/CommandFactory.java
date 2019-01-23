@@ -18,6 +18,7 @@ public class CommandFactory {
     commands.put("/start", StartCommand.class);
     commands.put("/team", TeamCommand.class);
     commands.put("/help", HelpCommand.class);
+    commands.put("/jenkins", JenkinsCommand.class);
   }
 
   public Command getSendStartCommand() {
